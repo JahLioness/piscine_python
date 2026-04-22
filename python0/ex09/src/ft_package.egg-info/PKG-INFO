@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: ft_package
+Version: 0.0.1
+Summary: My first python package
+Home-page: https://github.com/JahLioness/ft_package
+Author: ede-cola
+Author-email: ede-cola@student.42.fr
+License: MIT
+Keywords: python,package
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Element Counter
+
+A simple Python package for counting elements in a list.
+
+## Installation
+
+```bash
+pip install ./dist/ft_package-0.0.1.tar.gz
+```
+ou
+
+```bash
+pip install ./dist/ft_package-0.0.1-py3-none-any.whl
+```
+
+## Usage
+
+```python
+from ft_package import count_in_list
+
+data = [1, 2, 2, 3, 3, 3]
+result = count_in_list(data, 2)
+print(result)  # 2
+```
+
+## Features
+
+- Count occurrences of a given element in a list
+- Returns an int
+
+## License
+
+MIT
