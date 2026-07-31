@@ -15,12 +15,14 @@ def _population_to_float(value: object) -> float:
 
 
 def draw_population(path: str, country: str) -> None:
-    """Draw a line plot of population projections for France and a specified country.
+    """Draw a line plot of population projections
+     for France and a specified country.
     Parameters:
         path (str):
             The file path to the CSV file containing population data.
         country (str):
-            The name of the country for which to display population projections.
+            The name of the country for
+            which to display population projections.
     Returns:
         None
     """

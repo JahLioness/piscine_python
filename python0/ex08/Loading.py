@@ -2,7 +2,9 @@ import os
 
 
 def ft_tqdm(lst: range) -> None:
-    """Simulate a progress bar for a given list of items, displaying the percentage of completion and the number of items processed."""
+    """Simulate a progress bar for a given
+     list of items, displaying the percentage
+     of completion and the number of items processed."""
     total = len(lst)
     bar_length = os.get_terminal_size().columns - 41
     for i, elem in enumerate(lst):

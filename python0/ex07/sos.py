@@ -42,7 +42,8 @@ NESTED_MORSE = {
 
 
 def parse_args(str: str) -> bool:
-    """Check if the input string contains only valid characters (alphanumerics and spaces)."""
+    """Check if the input string contains only
+     valid characters (alphanumerics and spaces)."""
     for c in str:
         if not (c.isalpha() or c.isspace() or c.isdigit()):
             return False
@@ -50,7 +51,8 @@ def parse_args(str: str) -> bool:
 
 
 def main():
-    """Main function to execute the conversion of a string to Morse code, then print the resulting Morse code."""
+    """Main function to execute the conversion
+     of a string to Morse code, then print the resulting Morse code."""
     try:
         assert len(sys.argv) == 2 and \
             parse_args(sys.argv[1]), "AssertionError: the argument is bad"

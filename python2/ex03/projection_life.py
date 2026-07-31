@@ -10,7 +10,8 @@ def format_thousands(value, _position):
 
 
 def draw_gnp_life_projection(path_life: str, path_gnp: str) -> None:
-    """Draw points plot of GNP per capita and life expectancy projections for all countries register for the year 1900.
+    """Draw points plot of GNP per capita and
+     life expectancy projections for all countries register for the year 1900.
     Parameters:
         path_life (str):
             The file path to the CSV file containing life expectancy data.
@@ -41,7 +42,9 @@ def draw_gnp_life_projection(path_life: str, path_gnp: str) -> None:
 
 def main():
     try:
-        draw_gnp_life_projection("life_expectancy_years.csv", "income_per_person_gdppercapita_ppp_inflation_adjusted.csv")
+        draw_gnp_life_projection("life_expectancy_years.csv",
+                                 "income_per_person_gdppercapita_ppp\
+                                    _inflation_adjusted.csv")
     except Exception as e:
         print(f"An error occurred in main: {e}")
 

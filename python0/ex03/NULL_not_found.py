@@ -1,22 +1,22 @@
-def NULL_not_found(object: any) ->int:
+def NULL_not_found(object: any) -> int:
     if (object is None):
         print(f"Nothing: None {type(object)}")
-        return 0;
-    elif (type(object) == float and object != object):  # NaN check
+        return 0
+    elif (type(object) is float and object is not object):  # NaN check
         print(f"Garlic: nan {type(object)}")
-        return 0;
-    elif (type(object) == int and object == 0):
+        return 0
+    elif (type(object) is int and object == 0):
         print(f"Zero: 0 {type(object)}")
-        return 0;
-    elif (type(object) == str and object == ""):
+        return 0
+    elif (type(object) is str and object == ""):
         print(f"Empty: {type(object)}")
-        return 0;
+        return 0
     elif (type(object) is bool and object is False):
         print(f"Fake: False {type(object)}")
-        return 0;
+        return 0
     else:
         print("Type not found")
-        return 1;
+        return 1
 
 # def main():
 #     Nothing = None
