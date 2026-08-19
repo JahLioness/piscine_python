@@ -11,10 +11,10 @@ def generate_id() -> str:
 @dataclass
 class Student:
     """Represents a student with a name, age, and unique ID."""
-    def __init__(self, name: str, surname: str):
-        self.name = name
-        self.surname = surname
-        self.active = True
-        self.login =  self.name[0].upper() + self.surname.lower()
-        self.id = field(default_factory=generate_id)
-        print(f"Student (name='{self.name}', surname='{self.surname}', active={self.active}, login='{self.login}', id='{self.id}')")
+    name: str
+    surname: str
+    active: bool = True
+    login: str = field(init=False)
+    id: str = field(init=False, default_factory=generate_id)
+    def __post_init__(self):
+        self.login = self.name[0].upper() + self.surname.lower()
